@@ -5,7 +5,7 @@ import sys
 
 print("Input the number of seconds")
 seconds = int(input())
-if seconds > 86400:
+if seconds > 86400 or seconds < 0:
     print("There are only 86400 seconds in a single day. Please try again.")
     sys.exit()
 hours = seconds // 3600
